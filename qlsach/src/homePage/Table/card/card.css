@@ -1,0 +1,18 @@
+.packetStory{
+    display: flex;
+    width: 185px;
+    height: 330px;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(145, 229, 221);
+}
+.titleStorydad{
+    max-width: 100%;
+}
+.titleStory{
+    color: rgb(177, 13, 13);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
