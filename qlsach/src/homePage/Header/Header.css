@@ -1,6 +1,15 @@
-.header{
-    border: 3px black solid;
+.header {
+    background-image: url('https://w0.peakpx.com/wallpaper/216/811/HD-wallpaper-northern-lights-nightscapes-horizon-beautiful-landscapes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    border: 3px solid #A8B9C4;
     padding: 40px;
-    display: flex ;
+    display: flex;
     justify-content: center;
+    z-index: 999;
+    border-radius: 8px;
+    color: white;
 }

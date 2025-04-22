@@ -1,0 +1,98 @@
+.packetStoryedit {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(to bottom right, #e6f5f5, #cfeeed, #a2d9d9);
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 16px;
+    gap: 20px;
+  }
+  .infoEdit {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+  }
+  .headerEdit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .actionBtns {
+    display: flex;
+    gap: 8px;
+  }
+.titleStorydadEdit{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.titleStoryEdit{
+    color: rgb(177, 13, 13);
+    margin: 1px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+}
+.card-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 220px;
+    padding-top: 190px;
+}
+.DescriptionStoryEdit{
+    color: #555;
+    font-size: 14px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 8;
+}
+.TenTacGiaStoryEdit{
+    color: #1e88e5;
+    font-size: 16px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+}
+.imgedit {
+    width: 200px;
+    height: 285px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.btn_edit_edit, .btn_edit_delete {
+    border: none;
+    border-radius: 50%;
+    padding: 4px; 
+    width: 20px; 
+    height: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn_edit_edit:hover {
+    background-color: #e3f2fd;
+    color: #1e88e5;
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+.btn_edit_delete:hover {
+    background-color: #ffebee;
+    color: #e53935;
+    transform: scale(1.1);
+    box-shadow: none;
+}

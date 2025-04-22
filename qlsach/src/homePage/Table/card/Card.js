@@ -1,15 +1,12 @@
 import './card.css'
-const Card = () => {
+const Card = ({title, img}) => {
     return (
         <div className="packetStory">
-            <div className='img'>
-            <img src = './daoquyditien.jpg'/>
-            </div>
+            <img className='img' src = {img}/>
             <div className='titleStorydad'>
-            <h3 className='titleStory'>Đạo Quỷ Dị Tiên quỷ ma hành hạ</h3>
+            <h3 className='titleStory'>{title}</h3>
             </div>
         </div>
     );
 }
-
 export default Card;

@@ -5,7 +5,14 @@
     padding: 20px;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(145, 229, 221);
+    background: linear-gradient(to bottom right, #e6f5f5, #cfeeed, #a2d9d9);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.packetStory:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 .titleStorydad{
     max-width: 100%;
@@ -15,4 +22,16 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+}
+.card-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+.img{
+    width: 200px;
+    height: 285px;
+    object-fit: fill;
 }

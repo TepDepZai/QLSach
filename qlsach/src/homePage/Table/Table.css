@@ -1,3 +1,11 @@
-.title-table{
-    color: brown;
+.title-table {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a1a1a;
+    border: 2px dashed #6a5acd;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin: 15px 0;
 }
