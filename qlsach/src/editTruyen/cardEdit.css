@@ -1,6 +1,5 @@
 .packetStoryedit {
     display: flex;
-    width: 100%;
     background: linear-gradient(to bottom right, #e6f5f5, #cfeeed, #a2d9d9);
     overflow: hidden;
     border-radius: 5px;

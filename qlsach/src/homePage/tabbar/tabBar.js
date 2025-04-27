@@ -23,7 +23,6 @@ const TabBar = () => {
               <button className="btn_basic" onClick={goToEdit}>Sửa Truyên</button >
               <button className="btn_basic" onClick={() => setTimKiem(!timkiem)}>Tìm Kiếm</button>
               {timkiem && (<TimKiem onClose={() => setTimKiem(!timkiem)}/>)}
-              <Pagination/>
           </div>  
     );
 }

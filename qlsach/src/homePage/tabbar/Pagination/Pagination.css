@@ -8,7 +8,7 @@
 }
 
 .Pg-box {
-    background-image: url('https://th.bing.com/th/id/OIP.qgCIr6smj74QWspB-N6gKAHaJQ?w=640&h=800&rs=1&pid=ImgDetMain');
+    /* background-image: url('https://th.bing.com/th/id/OIP.qgCIr6smj74QWspB-N6gKAHaJQ?w=640&h=800&rs=1&pid=ImgDetMain'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,8 +29,6 @@
 
 .btn_numberpage {
     color: white;
-    height: 30px;
-    width: 32px;
     border-radius: 30px;
     border: none;
     background-color: #0000006e;

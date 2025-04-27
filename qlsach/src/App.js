@@ -18,12 +18,12 @@ function App() {
         element={<HomePage />}
       />
       <Route
-      path='/editTruyen'
-      element={<EditTruyenPage/>}
+        path='/editTruyen'
+        element={<EditTruyenPage />}
       />
       <Route
-      path='/timkiem/:slug'
-      element={<FormTimKiem/>}
+        path='/timkiem/:slug'
+        element={<FormTimKiem />}
       />
 
     </Routes>

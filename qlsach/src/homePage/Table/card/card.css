@@ -1,37 +1,123 @@
-.packetStory{
+/* Định dạng cho Card */
+.packetStory {
     display: flex;
-    width: 185px;
-    height: 330px;
-    padding: 20px;
-    align-items: center;
     flex-direction: column;
-    background: linear-gradient(to bottom right, #e6f5f5, #cfeeed, #a2d9d9);
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    align-items: center;
+    width: 220px;
+    height: 350px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+    cursor: pointer; /* Thêm chỉ báo con trỏ khi hover */
 }
+
+/* Hiệu ứng hover cho Card */
 .packetStory:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+    background: rgba(103, 220, 220, 0.95); /* Đổi màu nền khi hover */
 }
-.titleStorydad{
-    max-width: 100%;
+
+/* Tiêu đề Card */
+.titleStorydad {
+    width: 100%;
+    margin-top: 12px;
 }
-.titleStory{
-    color: rgb(177, 13, 13);
-    text-overflow: ellipsis;
+
+.titleStory {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e330d1; /* Màu đỏ nổi bật */
+    text-align: center;
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 12px;
+    letter-spacing: 1px; /* Tăng khoảng cách giữa các chữ */
+    text-transform: uppercase; /* Chuyển chữ thành chữ hoa */
 }
+
+/* Container chứa các Card */
 .card-main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
 }
-.img{
-    width: 200px;
-    height: 285px;
-    object-fit: fill;
+
+/* Định dạng hình ảnh trong Card */
+.img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Thêm shadow cho ảnh */
+    transition: transform 0.3s ease;
+}
+
+.img:hover {
+    transform: scale(1.05); /* Hiệu ứng zoom cho ảnh khi hover */
+}
+
+
+.titleTacGia {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    margin-top: 12px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+
+.Pg-gps-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12px;
+    width: 86%;
+}
+
+
+.Pg-box2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn_numberpage {
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #d32f2f;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #d32f2f;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn_numberpage:hover {
+    background-color: #d32f2f;
+    color: #fff; /* Đổi màu chữ khi hover */
+}
+
+/* Hiệu ứng nút disabled */
+.btn_numberpage.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Cải tiến hiệu ứng cho chevron */
+.btn_numberpage:hover {
+    background-color: #f5f5f5; /* Tạo nền sáng cho nút khi hover */
+    color: #d32f2f;
 }
